@@ -2,7 +2,7 @@
 #### https://www.elastic.co/guide/en/elasticsearch/reference/current/index-mgmt.html
 
 
-PUT _index_template/template_radares-02
+PUT _index_template/template_radares-03
 {
   "index_patterns": [ "radares02-*"  ],
   "template": {
@@ -105,6 +105,6 @@ PUT _index_template/template_radares-02
   "version": 1,
   "priority": 500,
    "_meta": {
-    "description": "template_radares02-br"
+    "description": "template_radares03-br"
   }
 }
