@@ -1,0 +1,9 @@
+---
+## Default Logstash configuration from Logstash base image.
+## https://github.com/elastic/logstash/blob/master/docker/data/logstash/config/logstash-full.yml
+#
+http.host: "0.0.0.0"
+
+### [WARN ][logstash.filters.geoip   ][main] ECS expect `target` value `geoip` in ["client", "destination", "host", "observer", "server", "source"]  
+### https://discuss.elastic.co/t/geoip-stopped-consolidating-coordinates-after-logstash-upgrade-to-8-0/298067
+pipeline.ecs_compatibility: disabled
